@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(67.08deg, #1E46A3 0%, #000000 48.94%, #C12A23 99.97%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    height: auto;
+}
+
+.main_page {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.logo{
+    margin-top: 126px;
+}
+
+.main_page .page-title{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFCF9;
+}
+
+.find_movie_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180.98px;
+    height: 47px;
+    background: #E9E6E3;
+    border: 2px solid #1A1A1A;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+
+}
+
+.find_movie_button img{
+    margin-right: 17px;
+}
+
+.last_info{
+    width: 381px;
+    height: 42px; 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center; 
+    margin-top:26px;
+    color: #FFFCF9;
+}
+
+.not_found {
+    display: flex;
+    align-items: center;
+    margin: 30px 0 30px 0;
+}
+
+.not_found > p{
+    width: 387px;
+    height: 59px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFCF9;
+    margin-left: 34px;
+}
+
+.movie_or_serie-img{
+     width: 171px;
+     height: 243px;
+
+}
+
+.info-box{
+    display : flex ;
+    flex-flow : column;
+    margin : 0px 0 30px 34px
+}
+
+.movie_or_serie-title{
+    width: 231px;
+    min-height: 25.71px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFCF9;
+}
+
+.movie_or_serie-sinopse{
+    width: 423px;
+    min-height: 187px;
+    height: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+    color: #FFFCF9;
+}
+
+.release_date, .actors {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 10px;
+    color: #FFFCF9;
+}
+
+.movie_or_serie-info{
+    margin-top:30px
+}
+.movie_or_serie-img{
+    margin-top : 13px
+}
+.actors{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:550px;
+}
+
+
+@media (max-width : 770px) {
+     .not_found{
+         width: 80%;
+         flex-flow: column;
+     }
+     .not_found > p {
+         width: 100%;
+         text-align: center;
+         margin: 15px;
+     }
+     .main_page{
+         height: auto;
+     }
+     .info-box{
+           margin-left:0;
+           text-align: center;
+     } 
+      .page-title{
+           max-width: 359px;
+           text-align: center;
+      }
+      .movie_or_serie-info{
+          max-width: 80%;
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          height: auto;
+      }
+      .movie_or_serie-title{
+          margin: 20px auto 0 auto;
+      }
+      .movie_or_serie-sinopse{
+         width: 100%;
+       
+      }
+      .last_info{
+          width: 80%;
+          height: auto;
+      }
+}

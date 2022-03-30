@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/assets/favico/favicon.ico" type="image/x-icon">
+  <title>Rocketflix</title>
+</head>
+
+<body>
+    <main class="main_page">
+           <img class="logo" src="./assets/logo.svg" alt="">
+           <h1 class="page-title">Não sabe oque assistir?</h1>
+           <div style="display: none;" class="movie_or_serie-info">
+                  <img class="movie_or_serie-img" src="" >
+                  <div class="info-box">
+                        <h1 class="movie_or_serie-title"></h1>
+                        <p class="movie_or_serie-sinopse"></p>
+                        <p class="release_date"></p>
+                        <p class="actors"></p>
+                  </div>
+           </div>
+           <div style="display: none;" class="not_found">
+                  <img src="./assets/Poster.png" alt="" />
+                  <p>Ops, hoje não é dia de assistir filme.
+                    Bora codar! 🚀</p>
+           </div>
+           <button onclick="handleFindMovieButton()" class="find_movie_button">
+                    <img src="./assets/shuffle.svg" alt="">
+                    Encontrar filme
+           </button>
+           <p class="last_info">Clique em "Encontrar filme" que traremos informações
+            de algum filme para você assistir hoje.</p>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
